@@ -27,9 +27,9 @@ public class MySteps {
     myActions.gotoHomePage();
   }
 
-  @When("I searched hotels")
-  public void i_searched_hotels() {
-    myActions.searchHotel("london");
+  @When("I searched hotels in {string}")
+  public void i_searched_hotels(String city) {
+    myActions.searchHotel(city);
   }
 
   @When("I booked a {string} in {string}")
