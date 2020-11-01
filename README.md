@@ -25,3 +25,8 @@ Please run the command on Windows:
 After you run the maven test, you can find the report url in the terminal, like https://reports.cucumber.io/reports/df2b20d5-8b3d-4c7b-9b2f-88e8dd8bb748
 ![report](report.png)
 
+
+##Todo:
+1. The WebDriverHooks only works when run scenario via the cucumber cli, which takes the screenshot for report and close the browser.
+2. Add the step to clean up the data after the test, make each test independent without status leaking.
+3. Reduce the sleep methods, try to find out when the page is real loaded
